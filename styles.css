@@ -1,76 +1,88 @@
 * {
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 0px;
-    -moz-user-select: none;
-    -o-user-select:none;
-    -khtml-user-select:none;
-    -webkit-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    -webkit-user-drag: none;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: .3s ease-in-out;
-}
-.loading {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.loading * {
-    display: inline-block;
-    vertical-align: middle;
-}
-.loading img {
-    width: 25%;
-    height: 25%;
-}
-.loading p {
-    font-size: x-large;
+
+    transition: all .3s;
 }
 html, body {
+    width: 100%;
     height: 100%;
-    color: white;
-    background: linear-gradient(45deg, #34495eb9, #2c3e50);
 }
-html::-webkit-scrollbar {
-    display: none;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #606c71;
+
+    background-image: url("https://i2.100024.xyz/2023/07/11/r67hkb.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .head {
+    width: 100%;
+    padding: 5rem 0rem;
     display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+.head > p {
     width: 100%;
-    height: 10%;
-    background-color: rgba(240, 255, 255, 0.6);
-    color: #3498db;
-    font-size: 40px;
+    text-align: center;
 }
-.head img {
-    height: 90%;
-    border: white;
-    border-width: 2px;
-    border-radius: 50%;
+.title {
+    font-size: 3.25rem;
+    margin-bottom: 0.8rem;
+    --animate-delay: 1.2s;
 }
-.head * {
-    margin: 10px;
+.content {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+    --animate-delay: 1.4s;
 }
-.head span {
-    font-size: 30px;
-    background-color: rgba(46, 204, 112, 0.6);
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    margin-left: 20px;
+a {
+    color: #1e6bb8;
+    text-decoration: none
 }
-.head span:hover {
-    background-color: rgba(46, 204, 112, 0.3);
+
+a:hover {
+    text-decoration: underline
 }
-.Background {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: auto;
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.btn:hover {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.3)
+}
+
+.card {
+    background-color: #fff;
+    margin: 5rem 2rem;
+    padding: 5rem 2rem;
+    border-radius: 4px;
+    
+    --animation-delay: 1.8s;
+}
+
+.card > p {
+    font-size: 1.75rem;
 }

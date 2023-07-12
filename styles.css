@@ -4,6 +4,9 @@
 
     transition: all .3s;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 html, body {
     width: 100%;
     height: 100%;
@@ -19,6 +22,8 @@ body {
     background-image: url("https://i2.100024.xyz/2023/07/11/r67hkb.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .head {
     width: 100%;
@@ -85,4 +90,8 @@ a:hover {
 
 .card > p {
     font-size: 1.75rem;
+}
+
+.bottom {
+    padding: 0.5rem 0rem;
 }

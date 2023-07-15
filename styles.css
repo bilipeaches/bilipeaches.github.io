@@ -14,7 +14,6 @@ html, body {
 body {
     padding: 0;
     margin: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #606c71;
@@ -24,6 +23,12 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 .head {
     width: 100%;
@@ -90,8 +95,12 @@ a:hover {
 
 .card > p {
     font-size: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 .bottom {
     padding: 0.5rem 0rem;
+}
+.btns > * {
+    margin: 0rem 0.5rem;
 }
